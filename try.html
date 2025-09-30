@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>HTMLTutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      width: 25px;
+      height: 20px;
+      justify-content: space-between;
+    }
+
+    .hamburger div {
+      height: 3px;
+      background-color: white;
+      border-radius: 2px;
+    }
+
+
+    ul.nav-menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    ul.nav-menu li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    div {
+      background-color: gray;
+      width: auto;
+      height: auto;
+    }
+
+    .opt {
+      color: gray;
+
+    }
+
+    .t {
+      color: purple;
+    }
+
+    pre.bor {
+      border-top: none;
+      border-right: none;
+      border-bottom: none;
+      border-left: solid;
+      border-color: green;
+      border-width: 4px;
+      padding-left: 10px;
+
+
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-sizing: border-box;
+
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+
+    a {
+
+      text-decoration: none;
+    }
+
+    p {
+      display: inline;
+
+      padding-left: 10px;
+
+    }
+
+    .abd {
+      border: none;
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      background-color: lightgray;
+      border-radius: 10px;
+
+    }
+
+
+    .aba {
+      background-color: white;
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    img {
+      margin: 25px;
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      ul.nav-menu {
+
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+      }
+
+      ul.nav-menu.show {
+        display: flex;
+      }
+
+      ul.nav-menu li {
+        padding: 10px 20px;
+      }
+      img{
+        width:400px;
+        height:300px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div class="logo">MySite</div>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="ht.html" target="_blank">Intro</a></li>
+      <li><a href="Tag.html" target="_blank">TagBasic</a></li>
+      <li><a href="EX.html" target="_blank">Execute</a></li>
+      <li><a href="add.html" target="_blank">Additional</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>History of HTML</h2>
+      <p>
+        HTML, or <strong>HyperText Markup Language</strong>, was first created by
+        <strong>Tim Berners-Lee</strong> in <strong>1991</strong> while working at CERN.
+        It was designed to allow scientists to share documents and link between them using hyperlinks.
+      </p>
+
+      <p>
+        The first version, HTML 1.0, was very basic. It allowed for headings, paragraphs, lists, and links. Over time,
+        new features were added:
+      </p>
+
+      <ul>
+        <li><strong>HTML 2.0 (1995)</strong> Standardized version with basic form elements</li>
+        <li><strong>HTML 3.2 (1997)</strong> Introduced style support and scripting (JavaScript)</li>
+        <li><strong>HTML 4.01 (1999)</strong>Improved structure and support for CSS</li>
+        <li><strong>HTML5 (2014 - present)</strong> Major update with multimedia, semantic elements, and better
+          performance</li>
+      </ul>
+
+      <p>
+        Today, HTML5 is the core language of the web, supported by all modern browsers and used to create everything
+        from simple pages to complex web applications.
+      </p>
+    </section>
+  </main>
+
+  <a href="ht.html"><img src="HTML-Blog-Cover.png" target="_blank" alt="HTML" width="auto" height="auto"></a>
+
+
+  <div class="abd">
+    <section>
+      <h2>Example</h2>
+    </section>
+    <div class="aba">
+      <pre class="bor">
+<span class="opt">&lt;!doctype</span><span class="opt">&gt;</span>
+
+<span class="opt">&lt;<span class="t">html</span><span class="opt">&gt;</span>
+
+<span class="opt">&lt;<span class="t">head</span><span class="opt">&gt;</span>
+
+<span class="opt">&lt;<span class="t">title</span><span class="opt">&gt;</span>Page Title<span class="opt">&lt;<span class="t">/title</span><span class="opt">&gt;</span>
+<span class="opt">&lt;<span class="t">/head</span><span class="opt">&gt;</span>
+
+<span class="opt">&lt;<span class="t">body</span><span class="opt">&gt;</span>
+<span class="opt">&lt;<span class="t">h1</span><span class="opt">&gt;</span>This is a Heading<span class="opt">&lt;<span class="t">/h1</span><span class="opt">&gt;</span>
+<span class="opt">&lt;<span class="t">p</span><span class="opt">&gt;</span>This s a paragragh<span class="opt">&lt;<span class="t">/p</span><span class="opt">&gt;</span>
+
+<span class="opt">&lt;<span class="t">/body</span><span class="opt">&gt;</span>
+
+<span class="opt">&lt;<span class="t">/html</span><span class="opt">&gt;</span>
+</pre>
+    </div>
+  </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    // Optional: Close menu when clicking a link (for better UX)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('show');
+      });
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 HTML Guide | Made with ❤️</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Intro to HTML and CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0077cc;
+    }
+
+    ul {
+      background-color: #ffffff;
+      padding: 15px;
+      border-left: 4px solid #0077cc;
+      list-style-type: square;
+    }
+
+    pre {
+      background-color: #f0f0f0;
+      padding: 10px;
+      overflow-x: auto;
+      border-left: 4px solid #28a745;
+    }
+
+    .css-info {
+      background-color: #e9f7ef;
+      padding: 15px;
+      margin-top: 30px;
+      border-left: 4px solid #28a745;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ddd;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Introduction to HTML</h1>
+    <p>Learn how HTML and CSS work together to build web pages</p>
+  </header>
+
+  <main>
+    <h2>What is HTML?</h2>
+    <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It defines the structure and content of a webpage using tags.</p>
+
+    <h2>Basic HTML Tags</h2>
+    <ul>
+      <li><strong>&lt;html&gt;</strong>Root element</li>
+      <li><strong>&lt;head&gt;</strong>ontains meta information like title</li>
+      <li><strong>&lt;body&gt;</strong> Contains the visible page content</li>
+      <li><strong>&lt;h1&gt; to &lt;h6&gt;</strong> Headings</li>
+      <li><strong>&lt;p&gt;</strong> Paragraph</li>
+      <li><strong>&lt;a&gt;</strong>  Hyperlink</li>
+      <li><strong>&lt;img&gt;</strong> Image</li>
+      <li><strong>&lt;ul&gt;</strong>, <strong>&lt;li&gt;</strong> Lists</li>
+    </ul>
+
+    <h2>Example:</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <div class="css-info">
+      <h2>How CSS Helps</h2>
+      <p>CSS (Cascading Style Sheets) is used to make your HTML pages look beautiful. With CSS, you can:</p>
+      <ul>
+        <li>Change colors and fonts</li>
+        <li>Control layout and spacing</li>
+        <li>Make pages responsive for all screen sizes</li>
+        <li>Add effects like shadows, borders, and animations</li>
+      </ul>
+
+      <h3>Example:</h3>
+      <pre>
+&lt;style&gt;
+  h1 {
+    color: blue;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+    color: gray;
+  }
+&lt;/style&gt;
+      </pre>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Learn HTML & CSS | All rights reserved
+  </footer>
+
+</body>
+</html>
